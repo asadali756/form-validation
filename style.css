@@ -1,0 +1,59 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form-container{
+    width: 400px;
+    margin: 100px auto;
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/29/04/19/ocean-1867285_640.jpg");
+    border-radius: 8px;
+    box-shadow: 3px 3px 4px 4px purple;
+    padding: 10px;
+
+}
+input[type="text"],input[type="email"],input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    
+}
+input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus{
+    outline: none;
+}
+.form-grp{
+    position: relative;
+    padding: 10px;
+}
+.form-grp .fa{
+    position: absolute;
+    top: 50%;
+    right: 8%;
+}
+input[type="submit"]{
+    width: 100%;
+    border-radius: 8px;
+    background-color: silver;
+    color: black;
+    box-shadow: 3px 3px 4px gray;
+    padding: 10px;
+
+}
+.fa-times{
+    color: red;
+}
+.fa-times{
+    color: green;
+}
+#error{
+    color: red;
+    text-align: center;
+}
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+

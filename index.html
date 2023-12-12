@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css" integrity="sha512-rOTVxSYNb4+/vo9pLIcNAv9yQVpC8DNcFDWPoc+gTv9SLu5H8W0Dn7QA4ffLHKA0wysdo6C5iqc+2LEO1miAow==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="">
+  
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+              * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .form-container {
+            background-color: white;
+            width: 400px;
+            background-image: url("https://th-thumbnailer.cdn-si-edu.com/NsDNvU4moVeKqao5XfJgB8Ez8lg=/1072x720/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/f2/94/f294516b-db3d-4f7b-9a60-ca3cd5f3d9b2/fbby1h_1.jpg");
+            margin: 100px auto;
+            box-shadow: 3px 3px 4px 4px purple;
+            padding: 10px;
+            border-radius: 8px;
+
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid wheat;
+
+        }
+
+        input[type="text"]:focus,
+        input[type="mail"]:focus,
+        input[type="password"]:focus {
+            outline: none
+        }
+
+        .form-grp {
+            position: relative;
+            padding: 10px;
+        }
+
+        .form-grp .fa {
+            position: absolute;
+            top: 50%;
+            right: 8%;
+            display: none;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            width: 100%;
+            border-radius: 6px;
+            background-color: purple;
+            font-size: 30px;
+            font-weight: 900;
+            border: none;
+            box-shadow: 3px 3px 4px cyan;
+        }
+
+        .fa-times {
+            color: red;
+        }
+
+        .fa-check {
+            color: green;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        #error {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="form-container" onsubmit="return validate()">
+        <h3>login</h3>
+        <h2 id="error">Please fill the require</h2>
+
+        <div class="form-grp">
+            <label for="username">username</label>
+            <input type="text" class="username" id="username">
+            <i class="fa-solid fa-check u_times"></i>
+            <i class="fa-solid fa-xmark u_check"></i>
+
+        </div><br>
+
+        <div class="form-grp">
+            <label for="email">email</label>
+            <input type="email" class="email" id="email">
+            <i class="fa-solid fa-check e_times"></i>
+            <i class="fa-solid fa-xmark e_check"></i>
+        </div><br>
+
+        <div class="form-grp">
+            <label for="password">password</label>
+            <input type="password" class="password" id="password">
+            <i class="fa-solid fa-check p_times"></i>
+            <i class="fa-solid fa-xmark p_check"></i>
+        </div><br>
+        <div class="form-grp">
+            <input type="submit" value="login">
+        </div><br>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
